@@ -4,7 +4,7 @@ import './item-list.css'
 
 const ItemList = (props) =>  {
 
-    const { data, onItemSelected, children: renderLabel } = props
+    const { data, onItemSelected = () => {}, children: renderLabel } = props;
 
     const items = data.map((item) => {
         const { id } = item
