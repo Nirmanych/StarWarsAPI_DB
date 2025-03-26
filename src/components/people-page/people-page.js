@@ -24,13 +24,10 @@ export default class PeoplePage extends Component {
     render() {
 
         const {
-            getPerson,
-            getAllPeople,
-            getStarship,
-            getPlanet,
-            getPersonImage,
-            getStarshipImage,
-            getPlanetImage } = this.swapiService
+                getPerson,
+                getAllPeople,
+                getPersonImage,
+            } = this.swapiService
 
         const itemList = (
             <ItemList onItemSelected={this.onItemSelected} getData={getAllPeople}>
