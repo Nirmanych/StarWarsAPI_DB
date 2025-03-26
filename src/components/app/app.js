@@ -9,8 +9,9 @@ import ErrorBoundary from "../error-boundary"
 
 import { SwapiServiceProvider } from '../swapi-service-context'
 import SwapiService from "../../services/swapi-service"
-import { PeoplePage, PlanetsPage, StarshipsPage } from "../pages"
-
+import PeoplePage from '../pages/PeoplePage';
+import PlanetsPage from '../pages/PlanetsPage';
+import StarshipsPage from '../pages/StarshipsPage';
 export default class App extends Component{
 
     state = {
