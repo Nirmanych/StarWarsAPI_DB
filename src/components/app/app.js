@@ -17,6 +17,7 @@ import PlanetsPage from '../pages/planets-page'
 import StarshipsPage from '../pages/starships-page'
 import SecretPage from '../pages/secret-page'
 import LoginPage from '../pages/login-page'
+import WelcomePage from '../pages/start-page'
 
 export default class App extends Component{
 
@@ -53,7 +54,7 @@ export default class App extends Component{
                             <Header/>
                             <RandomPlanet />
                             <Switch>
-                                <Route path="/" render={() => <h4>Welcome to StarDB</h4>} exact />
+                                <Route path="/" component={WelcomePage} exact />
 
                                 <Route path="/people/:id?" component={PeoplePage} exact/>
 
