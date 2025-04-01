@@ -7,7 +7,7 @@ import './app.css'
 import ErrorIndicator from "../error-indicator"
 import ErrorBoundary from "../error-boundary"
 
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import StarshipDetails from "../sw-components/starship-details";
 
 import { SwapiServiceProvider } from '../swapi-service-context'
@@ -57,7 +57,7 @@ export default class App extends Component{
 
                                 <Route path="/people/:id?" component={PeoplePage} exact/>
 
-                                <Route path="/planets" component={PlanetsPage} exact/>
+                                <Route path="/planets/:id?" component={PlanetsPage} exact/>
 
                                 <Route path="/starships" component={StarshipsPage} exact/>
                                 <Route path="/starships/:id" render={({ match }) => {
